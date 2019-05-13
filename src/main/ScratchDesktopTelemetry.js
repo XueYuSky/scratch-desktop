@@ -15,7 +15,8 @@ const EVENT_TEMPLATE = {
     soundsCount: -1
 };
 
-const APP_ID = 'scratch-desktop';
+// const APP_ID = 'scratch-desktop';
+const APP_ID = '明学思Robot桌面版';
 const APP_VERSION = app.getVersion();
 const APP_INFO = Object.freeze({
     projectName: `${APP_ID} ${APP_VERSION}`

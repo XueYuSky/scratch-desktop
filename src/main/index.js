@@ -76,9 +76,12 @@ const createMainWindow = () => {
     webContents.on('will-prevent-unload', ev => {
         const choice = dialog.showMessageBox(window, {
             type: 'question',
-            message: 'Leave Scratch?',
-            detail: 'Any unsaved changes will be lost.',
-            buttons: ['Stay', 'Leave'],
+            // message: 'Leave Scratch?',
+            // detail: 'Any unsaved changes will be lost.',
+            // buttons: ['Stay', 'Leave'],
+            message: '退出 Scratch?',
+            detail: '所有没保存的变更将丢失！',
+            buttons: ['返回', '坚持退出'],
             cancelId: 0, // closing the dialog means "stay"
             defaultId: 0 // pressing enter or space without explicitly selecting something means "stay"
         });
